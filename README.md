@@ -52,8 +52,9 @@ You can load the dataset directly into Python using Pandas:
 ```python
 import pandas as pd
 
-# Load dataset directly from raw URL
-url = "[https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/dla7_packages_dataset.csv](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/dla7_packages_dataset.csv)"
+url = "https://raw.githubusercontent.com/Armink66/amazon_VAP_DLA7/main/dla7_packages_dataset.csv"
 df = pd.read_csv(url)
+
+print(f"Dataset successfully loaded! Total packages: {len(df)}")
 
 df.head()
