@@ -2,17 +2,17 @@
 dataset for viehcle allocation problem - DLA7 depot station
 Dataset Field Guide: Amazon Last-Mile Delivery (DLA7 Station)
 Project Overview
-•	Project Title: Data-Driven Last-Mile Fleet Allocation: Learning Operational Item-to-Vehicle Assignment Rules.
-•	Problem Statement: Standard Vehicle Routing Problem (VRP) algorithms optimize purely for theoretical mathematical metrics like shortest physical distance or lowest travel time. However, real-world human dispatchers assign packages based on unwritten operational preferences—such as driver neighborhood familiarity, road network complexities, and vehicle volume constraints.
-•	Objective: Solve the Vehicle Allocation Problem (VAP) by predicting which package belongs to which specific delivery vehicle on a given day. By treating this as a Machine learning or Agentic AI problem, models can capture real-world dispatcher preferences without needing to solve complex Traveling Salesperson Problem (TSP) stop sequences.
+  •	Project Title: Data-Driven Last-Mile Fleet Allocation: Learning Operational Item-to-Vehicle Assignment Rules.
+  •	Problem Statement: Standard Vehicle Routing Problem (VRP) algorithms optimize purely for theoretical mathematical metrics like shortest physical distance or lowest travel time. However, real-world human dispatchers assign packages based on unwritten operational preferences—such as driver neighborhood familiarity, road network complexities, and vehicle volume constraints.
+  •	Objective: Solve the Vehicle Allocation Problem (VAP) by predicting which package belongs to which specific delivery vehicle on a given day. By treating this as a Machine learning or Agentic AI problem, models can capture real-world dispatcher preferences without needing to solve complex Traveling Salesperson Problem (TSP) stop sequences.
 Column Descriptions
 1. Package Identification & Physical Dimensions
-•	package_id: A unique string identifier assigned to each individual parcel. Serves as the primary key for item-level prediction.
-•	planned_service_time_sec: The estimated driver drop-off/dwell time in seconds at the delivery address. Represents the physical service workload required at the door (e.g., parking, scanning, walking to the entrance).
-•	depth_cm: The physical depth measurement of the parcel in centimeters (cm).
-•	height_cm: The physical height measurement of the parcel in centimeters (cm).
-•	width_cm: The physical width measurement of the parcel in centimeters (cm).
-•	volume_cm3: The total physical space consumed by the individual package in cubic centimeters (cm^3), computed as depth times height times width. Essential for evaluating vehicle capacity boundaries.
+  •	package_id: A unique string identifier assigned to each individual parcel. Serves as the primary key for item-level prediction.
+  •	planned_service_time_sec: The estimated driver drop-off/dwell time in seconds at the delivery address. Represents the physical service workload required at the door (e.g., parking, scanning, walking to the entrance).
+  •	depth_cm: The physical depth measurement of the parcel in centimeters (cm).
+  •	height_cm: The physical height measurement of the parcel in centimeters (cm).
+  •	width_cm: The physical width measurement of the parcel in centimeters (cm).
+  •	volume_cm3: The total physical space consumed by the individual package in cubic centimeters (cm^3), computed as depth times height times width. Essential for evaluating vehicle capacity boundaries.
 2. Delivery Location & Spatial Attributes
 •	stop_id: An anonymized code representing a specific physical delivery address. Multiple packages bound for the same house or apartment building share the same stop_id.
 •	lat: The latitude coordinate of the delivery location in decimal degrees.
